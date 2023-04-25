@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+
+        >
+
+
+        <EditText
+            android:id="@+id/editText_ValorInicial"
+            android:padding="16dp"
+            android:hint="Valor Inicial"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor Inicial"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_ValorMensal"
+            android:padding="16dp"
+            android:hint="Valor Mensal"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor Mensal"/>
+
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_TaxaDeJuros"
+            android:padding="16dp"
+            android:hint="Taxa de Juros"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="horizontal">
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taxa de Juros"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_Periodo"
+            android:padding="16dp"
+            android:hint="Periodo"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="horizontal">
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Periodo"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total"/>
+
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="resultado"/>
+
+        <Button
+
+            android:id="@+id/button_calculate"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Calcular"
+
+            />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Investido"/>
+
+        <TextView
+            android:id="@+id/textViewTotalInvestido"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Ganho em Juros"/>
+
+        <TextView
+            android:id="@+id/textViewTotalGanhoEmJuros"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$"/>
+
+
+        <Button
+
+            android:id="@+id/buttonEmitir"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Emitir Promissoria"
+            android:enabled="false"
+            android:visibility="invisible"
+
+            />
+
+    </LinearLayout>
+
+</ScrollView>
+
