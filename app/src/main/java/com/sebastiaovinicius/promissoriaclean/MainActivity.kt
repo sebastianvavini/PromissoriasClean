@@ -150,8 +150,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         var intencaoPromissoria= Intent (this,PromissoriaActivity::class.java)
       //  intencaoPromissoria.putExtra("credor","Sebastiao Vinícius Araújo de Moura")
        // intencaoPromissoria.putExtra("devedor","George Donnaydy Araújo de Moura")
+
+        intencaoPromissoria.putExtra("valor",binding.textViewTotal.text)
         startActivity(intencaoPromissoria)
-        finish()
+       // finish()
 
 
     }

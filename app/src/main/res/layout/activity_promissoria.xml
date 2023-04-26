@@ -1,9 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PromissoriaActivity">
+    tools:context=".MainActivity"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+
+        >
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor a Ser Pago"/>
+
+        <TextView
+            android:id="@+id/textViewTotalInvestido"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$"/>
+
+
+        <EditText
+            android:id="@+id/editTextNomeDevedor"
+            android:padding="16dp"
+            android:hint="NOME COMPLETO DO DEVEDOR"
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOME COMPLETO DO DEVEDOR"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextNomeCredor"
+            android:padding="16dp"
+            android:hint="NOME COMPLETO DO CREDOR"
+
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOME COMPLETO DO CREDOR"/>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Picker"
+            android:onClick="showDatePickerDialog" />
+
+
+
+
+
+
+
+        <Button
+
+            android:id="@+id/buttonImprimerEmPDF"
+            android:padding="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Gerar PDF"
+
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
